@@ -268,14 +268,15 @@ section{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(30rem,1fr));
-    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
+    grid-gap:2.5rem;
 }
 
 .grid-item{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .featured-hotels{
@@ -293,7 +294,7 @@ section{
     left: 0;
     height: 100%;
     width: 100%;
-    background-clip: var(--purple-transparent-alt);
+    background-color: var(--purple-transparent-alt);
     z-index: -1;
 }
 
@@ -302,4 +303,5 @@ section{
     height: 100%;
     object-fit: cover;
     position: absolute;
+    z-index: -2;
 }
