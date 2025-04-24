@@ -305,3 +305,19 @@ section{
     position: absolute;
     z-index: -2;
 }
+
+.hotel-name{
+    font-size: 2.6rem;
+}
+
+.hotel-price{
+    font-size: 1,8rem;
+}
+
+.hotel-rating{
+    margin: 1rem 0 2.5rem;
+}
+
+.rating{
+    color: var(--yellow-solid)
+}
