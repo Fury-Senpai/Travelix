@@ -64,6 +64,28 @@ section{
     margin-top: 2.5rem;
     cursor: pointer;
 }
+
+.btn-gradient{
+    background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover{
+    background-image: var(--gradient-color-alt);
+}
+  
+.dots{
+    font-size: 2.4rem;
+    margin-left: .5rem;
+    opacity: .75;
+}
+
+.btn-purple{
+    background-color: var(--purple-solid);
+}
+
+.btn-purple:hover{
+    background-color:#56247f;
+}
 /* Header styles */
 .header{
     width: 100%;
@@ -183,19 +205,7 @@ section{
     font-family: 'Courgette' , cursive;
 }
 
-.btn-gradient{
-    background-image: var(--gradient-color);
-}
 
-.btn-gradient:hover{
-    background-image: var(--gradient-color-alt);
-}
-  
-.dots{
-    font-size: 2.4rem;
-    margin-left: .5rem;
-    opacity: .75;
-}
 
 /* Booking section style */
 .booking{
@@ -234,10 +244,35 @@ section{
     cursor: pointer;
 }
 
-.btn-purple{
-    background-color: var(--purple-solid);
+::placeholder{
+    color: inherit;
+}
+/* Featured hotels section styles */
+.section-head{
+    text-align: center;
+    margin-bottom: 5rem;
 }
 
-.btn-purple:hover{
-    background-color:#56247f;
+.heading{
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.sub-heading{
+    font-size: 1.7rem;
+    font-family: 'Courgette',cursive;
+    font-weight: 300;
+    color:#a5a5a5;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem,1fr));
+    grid-gap: 2.5rem;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
 }
